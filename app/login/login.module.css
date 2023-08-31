@@ -1,0 +1,137 @@
+.sectionLogin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #2c3e50;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3498db, #2c3e50); 
+  background: linear-gradient(to right, #3498db, #2c3e50); 
+}
+.colorHex {
+  width: 350px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(210, 210, 210, 0.37);
+  border-radius: 58% 72% 14% 46% / 15% 77% 50% 25%;
+  animation: movimiento 10s linear infinite alternate;
+}
+
+@keyframes movimiento {
+  0%, 100% {
+    border-radius: 58% 42% 19% 46% / 15% 76% 50% 65%;
+  }
+  50% {
+    border-radius: 16% 52% 28% 75% / 56% 17% 27% 18%;
+  }
+}
+
+
+.iconAccount {
+  font-size: 100px;
+  color: #2c3e50;
+}
+
+.containerLogin {
+    z-index: 10;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.title {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-family: var(--font);
+  color: var(--letter-color);
+}
+
+.containerInput {
+  position: relative; /* Añade esta propiedad para posicionar los iconos */
+  width: 270px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+.userName, .password {
+  border-radius: 10px;
+  border: 1px solid aliceblue;
+  width: 100%;
+  height: 30px;
+  box-shadow: 0px 0px 25px 0px rgba(210, 210, 210, 0.37);
+  padding-left: 40px;
+}
+.userName:focus,
+.password:focus {
+  color : #5f6692;
+  outline-color: #3164b1;
+}
+
+.divUser,
+.divPassword {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  font-family: var(--font);
+  position: relative; /* Añade esta propiedad para posicionar los iconos */
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  color: var(--icon-color); /* Cambia esto según tus preferencias */
+  position: absolute;
+  top: 50%;
+  left: 10px; /* Ajusta esto según tu diseño */
+  transform: translateY(-50%);
+  padding-right: 5px;
+  border-right: 1px solid black;
+  font-size: 20px;
+}
+
+.buttonLogin {
+  width: 175px;
+  height: 36px;
+  border-radius: 10px;
+  background-color: #2c3e50;
+  color: var(--letter-color);
+  cursor: pointer;
+  margin-bottom: 15px ;
+  font-family: var(--font);
+}
+
+.inputQuestions {
+  font-family: var(--font);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 200px;
+  height: 30px;
+}
+.divRemember{
+  width: 50% ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.remember {
+  font-size: 12px;
+  text-align: center;
+  margin-left: 5px;
+}
+.forgot {
+  text-align: center;
+  width: 50%;
+  font-size: 12px;
+}
