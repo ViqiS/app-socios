@@ -1,11 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Corben&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mandali&display=swap');
 :root {
   --background-color: ;
-  --font: 'Oxygen', sans-serif;
+  --font: 'Mandali', sans-serif;
+  --font-title: 'Corben', cursive; ;
   --letter-color: aliceblue;
   --font-size-small: 12px;
   --font-size-medium: 20px;
   --font-size-title: 30px;
+  --blue-dark: rgb(44, 62, 80);
+  --sky-blue: rgba(240, 248, 255);
+  --grey-opacity: rgba(210, 210, 210, 0.37);
+  --blue-details: rgb(49, 100, 177);
+  --color-details-grey: rgb(95, 102, 146);
+  --grayish-blue: rgb(95, 158, 160);
+  --black: rgb(0, 0, 0);
+  --white: rgb(255, 255, 255);
+  --font-size-sm: 12px;
+  --font-size-md: 14px;
+  --font-size-bg: 16px;
+  --font-size-tt: 30px;
+  --icon-color: rgb(0, 0, 0);
+
 }
 
 * {
