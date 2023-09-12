@@ -59,7 +59,7 @@
 .containerInput {
   position: relative; /* Añade esta propiedad para posicionar los iconos */
   width: 270px;
-  height:270px;
+  height:300px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
