@@ -15,7 +15,7 @@ const links = [{
     route: "/discounts"
   },
   {
-    label: "Socios",
+    label: "Partner",
     route: "/notifications"
   },
   {
@@ -47,7 +47,7 @@ export default function Navigation() {
     setNotificationsOpen(!notificationsOpen)
     setMenuOpen(false);
     setSearchActive(false);
-  }
+  };
   
     useEffect(() => {
       const handleOutsideClick = (event) => {
