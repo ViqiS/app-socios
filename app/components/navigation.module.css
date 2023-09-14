@@ -288,7 +288,9 @@
     cursor: pointer;
   }
   .containerNotif {
+    width: 250px;
     top: 60px;
+    border-left: 1.5px solid var(--grayish-blue);
     }
   .liNotif {
     font-size: var(--font-size-md);
