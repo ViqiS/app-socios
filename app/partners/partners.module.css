@@ -1,0 +1,119 @@
+.containerPartners {
+  width: 100%;
+  height: fit-content;
+}
+
+.titlePartners {
+  text-align: center;
+  font-family: var(--font-title);
+  font-size: var(--font-size-tt);
+}
+.containerSearch {
+  display: flex;
+  overflow: hidden;
+  height: 50px;
+  width: 300px;
+  align-items: center;
+  justify-content: space-around;
+  transition: all 1s ease;
+}
+.divSearch {
+  display: flex;
+  align-items: center;
+}
+.containerUsers {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+}
+.iconSearch {
+  font-size: 20px;
+  margin-left: 5px;
+  cursor: pointer;
+  color: var(--black);
+}
+.searchInput {
+  border-radius: 5px;
+  padding: 2px;
+  border: 1px solid black;
+  background: transparent;
+  width: 150px; /* Cambié la anchura inicial aquí */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+.searchInput:focus {
+  color: var(--letter-color);
+  outline: 1px solid var(--grayish-blue);
+}
+.searchInput:focus::placeholder {
+  color: rgba(8, 8, 8, 0.499);
+  padding: 5px;
+  font-family: var(--font);
+}
+.partnersList {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--grey-opacity);
+    padding: 0 10px 0 10px;
+    margin-bottom: 5px;
+}
+.name {
+  width: 60px;
+  font-family: var(--font);
+  font-size: var(--font-size-md);
+}
+.buttonDelete,
+.buttonAssociate {
+  width: 80px;
+  font-family: var(--font);
+  font-size: var(--font-size-sm);
+  color: var(--letter-color);
+  height: fit-content;
+  border-radius: 30px;
+  border: 1px solid var(--white);
+  transition: all 1s ease;
+}
+.buttonDelete {
+  background-color: rgb(250, 109, 109);
+}
+.buttonDelete:hover {
+  box-shadow:0px 0px 15px 5px rgb(250, 109, 109) ;
+}
+.buttonAssociate {
+  background-color: var(--grayish-blue);
+}
+.buttonAssociate:hover {
+  box-shadow:0px 0px 15px 5px var(--grayish-blue) ;
+}
+
+@media (min-width: 768px) {
+  .containerUsers {
+    width: 768px;
+  }
+  .containerPartners {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .partnersList {
+    height: 80px;
+    padding: 0 10px 0 10px;
+}
+.name {
+  font-size: var(--font-size-bg);
+}
+.buttonDelete,
+.buttonAssociate {
+  width: 90px;
+  font-size: var(--font-size-md);
+
+  
+}
+}

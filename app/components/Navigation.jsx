@@ -16,7 +16,7 @@ const links = [{
   },
   {
     label: "Partner",
-    route: "/notifications"
+    route: "/partners"
   },
   {
     label: "My account",
