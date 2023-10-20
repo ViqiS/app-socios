@@ -114,6 +114,7 @@
   margin-bottom: 15px ;
   font-family: var(--font);
   transition: box-shadow 1s ease;
+  position: relative;
 }
 .buttonLogin:hover {
   box-shadow: 0px 0px 39px -5px var(--sky-blue);
@@ -168,12 +169,30 @@
   transition: color 0.3s ease-in;
 }
 .have:hover,
-.forgot:hover {
+.forgot:hover,
+.forgotAttention:hover,
+.haveAttention:hover {
   color: var(--sky-blue);
 }
 .divForgot {
   width: 265px;
   text-align: end;
+}
+.forgotAttention,
+.haveAttention {
+  font-family: var(--font);
+  text-align: center;
+  width: 50%;
+  font-size: var(--font-size-sm);
+  cursor: pointer;
+  transition: color 0.3s ease-in;
+  color: rgb(186, 4, 4);
+}
+.errorMessage {
+  font-family: var(--font);
+  font-size: var(--font-size-sm);
+  position: absolute;
+  top: 280px;
 }
 
 @media (min-width: 375px ) {
@@ -211,6 +230,13 @@
     width: 18px;
     height: 18px;
   }
-
+  .errorMessage {
+    top: 284px;
+  }
 }
 
+@media (min-width: 1440px ) {
+  .errorMessage {
+    top: 330px;
+  }
+}

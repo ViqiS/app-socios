@@ -2,6 +2,7 @@
 import React, { useState, useRef } from "react";
 import styles from './partners.module.css';
 import { BiSearch } from "react-icons/bi";
+import Image from "next/image";
 
 export default function Partners() {
   const [searchActive, setSearchActive] = useState(false);
@@ -54,11 +55,12 @@ export default function Partners() {
       <div className={styles.containerUsers}>
           {associations.map((partner, index) => (
       <li className={styles.partnersList} key={index}>
+        <Image src='/avatar-users.png'width={30} height={30}/>
         <p className={styles.name}>{partner.name}</p>
         {partner.associated ? (
-          <button className={styles.buttonDelete} onClick={() => deleteUser(index)}>Delete</button>
+          <button className={styles.buttonDelete} onClick={() => deleteUser(index)}>Not associated</button>
         ) : (
-          <button className={styles.buttonAssociate}  onClick={() => associateUser(index)}>Associate</button>
+          <button className={styles.buttonAssociate}  onClick={() => associateUser(index)}>Associated</button>
         )}
       </li>
     ))}
