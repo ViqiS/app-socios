@@ -55,7 +55,7 @@ export default function Partners() {
       <div className={styles.containerUsers}>
           {associations.map((partner, index) => (
       <li className={styles.partnersList} key={index}>
-        <Image src='/avatar-users.png'width={30} height={30}/>
+        <Image src='/avatar-users.png' width={30} height={30} alt='avatar' />
         <p className={styles.name}>{partner.name}</p>
         {partner.associated ? (
           <button className={styles.buttonDelete} onClick={() => deleteUser(index)}>Not associated</button>

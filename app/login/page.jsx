@@ -105,10 +105,12 @@ export default function Login() {
                             </div>
                             {
                                 links.map(
-                                    ({label, route}) => <span
+                                    ({label, route}, index) => <span
                                         className={error
                                             ? styles.haveAttention
-                                            : styles.have}>
+                                            : styles.have}
+                                        key={index}
+                                            >
                                         <Link href={route}>
                                             {label}
                                         </Link>
