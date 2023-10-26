@@ -15,7 +15,16 @@ export default function Partners() {
     { name: 'Charles', associated: true }
   ]);
 
+  const [searchValue, setSearchValue] = useState('');
 
+  const searchedPartners = associations.filter(
+    partner => {
+  return partner.name.toLowerCase().includes(searchValue.toLowerCase());
+  });
+
+  const handleSearchChange = (e) => {
+    setSearchValue(e.target.value);
+  };
 
   const associateUser = (index) => {
     const updatedAssociations = [...associations];
@@ -30,7 +39,6 @@ export default function Partners() {
   };
   const handleSearchClick = () => {
     setSearchActive(!searchActive);
-    
   };
 
 
@@ -47,13 +55,16 @@ export default function Partners() {
               id="" 
               placeholder="Find partners" 
               ref={searchContainerRef}
-              className={searchActive ? `${styles.searchInput} ${styles.activeInput}` : styles.searchInput}/>
+              className={searchActive ? `${styles.searchInput} ${styles.activeInput}` : styles.searchInput}
+              value={searchValue} // Agrega esto para enlazar el valor del input con el estado
+              onChange={handleSearchChange} // Agrega esto para manejar los cambios en el input
+              />
             <BiSearch className={styles.iconSearch} onClick={handleSearchClick}/>
           </div>
       </div>
       
       <div className={styles.containerUsers}>
-          {associations.map((partner, index) => (
+      {searchedPartners.map((partner, index) => (
       <li className={styles.partnersList} key={index}>
         <Image src='/avatar-users.png' width={30} height={30} alt='avatar' />
         <p className={styles.name}>{partner.name}</p>

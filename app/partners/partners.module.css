@@ -12,9 +12,9 @@
   display: flex;
   overflow: hidden;
   height: 50px;
-  width: 300px;
+  width: 100%;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   transition: all 1s ease;
 }
 .divSearch {
@@ -25,6 +25,7 @@
   display: flex;
   align-items: stretch;
   flex-direction: column;
+  position: relative;
 }
 .iconSearch {
   font-size: 20px;
@@ -34,22 +35,30 @@
 }
 .searchInput {
   border-radius: 5px;
-  padding: 2px;
+  padding-left: 6px;
   border: 1px solid black;
   background: transparent;
   width: 150px; /* Cambié la anchura inicial aquí */
+  height: 24px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 
 }
 .searchInput:focus {
-  color: var(--letter-color);
+  color: var(--blue-dark);
   outline: 1px solid var(--grayish-blue);
+  font-family: var(--font);
+  height: 22px;
 }
 .searchInput:focus::placeholder {
   color: rgba(8, 8, 8, 0.499);
-  padding: 5px;
+  padding-left: 4px;
+  font-family: var(--font);
+
+}
+.searchPartner {
+  padding-right: 15px;
   font-family: var(--font);
 }
 .partnersList {
@@ -57,15 +66,17 @@
     height: 60px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     border-bottom: 1px solid var(--grey-opacity);
-    padding: 0 10px 0 10px;
+    padding: 0 10px 0 20px;
     margin-bottom: 5px;
 }
 .name {
   width: 60px;
   font-family: var(--font);
   font-size: var(--font-size-md);
+  position: absolute;
+  left: 65px;
 }
 .buttonDelete,
 .buttonAssociate {
@@ -77,6 +88,8 @@
   border-radius: 30px;
   border: 1px solid rgba(67, 66, 65, 0.434);
   transition: all 1s ease;
+  position: absolute;
+  right: 45px;
 }
 .buttonDelete {
   background-color: rgb(109, 123, 250);
@@ -108,6 +121,10 @@
 }
 .name {
   font-size: var(--font-size-bg);
+
+}
+.containerSearch {
+  width: 50%;
 }
 .buttonDelete,
 .buttonAssociate {

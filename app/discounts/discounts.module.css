@@ -1,0 +1,34 @@
+.containerDiscounts {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.containerDiscountsActive {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 30px;
+}
+.titleDiscounts {
+  font-family: var(--font-title);
+}
+.containerPromotions {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+}
+.containerCreatePromotion {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 50px;
+}

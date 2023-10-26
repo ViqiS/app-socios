@@ -45,7 +45,7 @@ export default function Promotions() {
   const cards = promociones.map((promo, index) => (
     <div key={index} className={styles.card}>
           <figure className={styles.containerImage}>
-            <Image className={styles.imagePromotion} src='/promotions.jpg' alt="Promotions" width={800} height={800} priority={true} layout="fixed" quality={100}/>
+            <Image className={styles.imagePromotion} src='/promotions.jpg' alt="Promotions" width={800} height={800} priority={true} quality={100}/>
           </figure>
           <div className={styles.info}>
             <p className={styles.titleCard}>{promo.title}</p>
