@@ -14,7 +14,7 @@ export default function CreatePromotion() {
         <input 
         type="text" 
         placeholder='Title'
-        className={styles.inputTitle}
+        className={styles.input}
         />
       </label>
 
@@ -23,7 +23,7 @@ export default function CreatePromotion() {
         <input 
         type="date" 
         placeholder='Lapse'
-        className={styles.inputLapse}
+        className={styles.input}
         />
       </label>
       
@@ -37,18 +37,20 @@ export default function CreatePromotion() {
       </select>
       </div>
 
-      <label className={styles.labelInput}>
+      <label className={`${styles.labelInput} ${styles.labelImage}`}>
         <p className={styles.pInput}>Choose image</p>
         <input 
         type="file"
         placeholder='Select Image'
-        className={styles.inputImage}
+        className={`${styles.input} ${styles.inputImage}`}
         />
       </label>
       
       
       
     </div>
+
+    <button className={styles.buttonCreate}>Create promotion</button>
     </section>
 
   )
